@@ -53,6 +53,44 @@
   margin-top: 30px;
 }
 
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.info-item {
+  display: inline-block;
+  width: 295px;
+  margin-top: 50px;
+  padding: 20px;
+  height: 440px;
+  background-color: #D4D2CE;
+}
+
+.info-item h3 {
+  text-align: center;
+}
+
+.info p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.info ul {
+  margin-top: 40px;
+}
+
+.info li {
+  margin-top: 10px;
+}
+
+.info .btn-more:hover {
+  text-decoration: underline;
+}
+
 .black-footer {
   height: 100px;
   background: #1E1E1E;
