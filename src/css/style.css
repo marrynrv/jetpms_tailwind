@@ -1,6 +1,10 @@
-.container {
-  display: block;
-  margin: 0 auto;
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
 }
 
 .black-header {
@@ -21,15 +25,11 @@
           flex-direction: column;
 }
 
-.col img {
-  max-width: 450px;
-}
-
 .col a {
-  width: 150px;
-  text-align: center;
   margin-top: 100px;
   margin-left: 30px;
+  text-align: center;
+  width: 200px;
 }
 
 .row {
@@ -49,7 +49,6 @@
 }
 
 .second-block h2 {
-  text-align: center;
   margin-top: 30px;
 }
 
@@ -57,12 +56,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3.5rem;
 }
 
 .info-item {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 295px;
   margin-top: 50px;
   padding: 20px;
@@ -72,11 +81,13 @@
 
 .info-item h3 {
   text-align: center;
+  position: relative;
 }
 
 .info p {
   margin-top: 10px;
   text-align: center;
+  color: #752302;
 }
 
 .info ul {
@@ -87,12 +98,85 @@
   margin-top: 10px;
 }
 
+.btn-more {
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 370px;
+}
+
 .info .btn-more:hover {
   text-decoration: underline;
 }
 
+.third-block h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.third-block {
+  background-color: #EEAE35;
+  height: 1000px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+}
+
+.advantage_item {
+  padding: 40px;
+  width: 460px;
+  border-radius: 50px;
+  background-color: #FFFFFF;
+  height: 300px;
+}
+
+.advantage_item h4 {
+  color: #752302;
+  font-size: 1.1rem;
+  padding-top: 10px;
+}
+
+.calculate {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+}
+
+.calculate-text {
+  margin-left: 50px;
+}
+
+.calculate option {
+  color: #1E1E1E;
+}
+
 .black-footer {
-  height: 100px;
+  height: 500px;
   background: #1E1E1E;
   color: #FFFFFF;
+  text-align: center;
+  position: relative;
+}
+
+.black-footer p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.black-footer .btn {
+  margin-top: 80px;
+  position: absolute;
+  width: 200px;
+  margin-left: 40px;
+}
+
+.black-footer span {
+  margin-top: 200px;
 }

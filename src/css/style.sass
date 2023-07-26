@@ -4,11 +4,12 @@ $third-gr-color:#D4D2CE
 $fourth-rd-color:#752302
 $fifth-wh-color:#FFFFFF
 
-.container 
-    display: block
-    margin: 0 auto
+body
+    box-sizing: border-box
 
 
+h2
+    text-align: center
 .black-header
     background-color: $base-color
     color: $fifth-wh-color
@@ -20,15 +21,12 @@ $fifth-wh-color:#FFFFFF
 .col
     margin-top: 150px
     flex-direction: column
-    
-.col img
-    max-width: 450px
+      
 .col a 
-    width: 150px
-    text-align: center
     margin-top: 100px
     margin-left: 30px
-
+    text-align: center
+    width: 200px
 .row
     display: flex
     flex-direction: row
@@ -38,15 +36,16 @@ $fifth-wh-color:#FFFFFF
     padding: 30px
 
 .second-block h2
-    text-align: center
     margin-top: 30px
 
 .info
     display: flex
-    justify-content: space-around
-
+    justify-content: center
+    flex-wrap: wrap
+    gap: 3.5rem
 .info-item
-    display: inline-block
+    display: flex
+    flex-direction: column
     width: 295px
     margin-top: 50px
     padding: 20px
@@ -55,22 +54,74 @@ $fifth-wh-color:#FFFFFF
 
 .info-item h3
     text-align: center
-
+    position: relative
 .info p
     margin-top: 10px
     text-align: center
+    color: $fourth-rd-color
 
 .info ul
     margin-top: 40px
 
 .info li
     margin-top: 10px
-
+.btn-more
+    margin-left: 100px
+    position: absolute
+    margin-top: 370px 
 .info .btn-more:hover
     text-decoration: underline
+.third-block h2
+    text-align: center
+    margin-top: 100px
+
+.third-block
+    background-color: $second-yel-color    
+    height: 1000px
+    
+.wrapper
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 100px
+
+.advantage_item
+    padding: 40px
+    width: 460px
+    border-radius: 50px
+    background-color: $fifth-wh-color
+    height: 300px
+
+.advantage_item h4
+    color:$fourth-rd-color
+    font-size: 1.1rem
+    padding-top: 10px
+
+.calculate
+    background-color: $base-color
+    color: $fifth-wh-color
+
+.calculate-text
+    margin-left: 50px
+
+.calculate option
+    color: $base-color
 
 .black-footer
-    height: 100px
+    height: 500px
     background: $base-color
     color: $fifth-wh-color
-    
+    text-align: center
+    position: relative
+
+.black-footer p 
+    margin-top: 50px
+    text-align: center
+.black-footer .btn
+    margin-top: 80px
+    position: absolute
+    width: 200px
+    margin-left: 40px
+
+.black-footer span
+    margin-top: 200px
