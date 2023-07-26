@@ -115,18 +115,14 @@ h2 {
 
 .third-block {
   background-color: #EEAE35;
-  height: 1000px;
+  padding-bottom: 100px;
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 35px;
   margin-top: 100px;
 }
 
@@ -136,6 +132,7 @@ h2 {
   border-radius: 50px;
   background-color: #FFFFFF;
   height: 300px;
+  margin: 0 auto;
 }
 
 .advantage_item h4 {
@@ -157,11 +154,52 @@ h2 {
   color: #1E1E1E;
 }
 
+.comm-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 80px;
+  margin: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.comm-item {
+  width: 540px;
+  border: 1px solid #752302;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.view-btn {
+  display: block;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.view-btn a {
+  border-radius: 50px;
+  padding: 10px;
+  border: 1px solid #752302;
+}
+
+.view-btn a:hover {
+  background-color: #752302;
+  color: #FFFFFF;
+}
+
 .black-footer {
   background: #1E1E1E;
   color: #FFFFFF;
   text-align: center;
-  position: relative;
+  margin-top: 80px;
 }
 
 .black-footer p {

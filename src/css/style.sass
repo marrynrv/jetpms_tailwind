@@ -77,13 +77,14 @@ h2
 
 .third-block
     background-color: $second-yel-color    
-    height: 1000px
+    padding-bottom: 100px
     
 .wrapper
-    display: flex
-    justify-content: space-around
-    align-items: center
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr))
+    gap:35px
     margin-top: 100px
+    
 
 .advantage_item
     padding: 40px
@@ -91,6 +92,7 @@ h2
     border-radius: 50px
     background-color: $fifth-wh-color
     height: 300px
+    margin: 0 auto
 
 .advantage_item h4
     color:$fourth-rd-color
@@ -107,11 +109,37 @@ h2
 .calculate option
     color: $base-color
 
+.comm-section
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 80px
+    margin: 60px
+    flex-wrap: wrap
+
+.comm-item
+    width: 540px
+    border: 1px solid $fourth-rd-color
+    border-radius: 30px
+    padding: 30px
+
+.view-btn 
+    display: block
+    text-align: center
+    margin-top: 70px
+.view-btn a
+    border-radius: 50px
+    padding: 10px
+    border: 1px solid $fourth-rd-color
+
+.view-btn a:hover
+    background-color: $fourth-rd-color
+    color: $fifth-wh-color
 .black-footer
     background: $base-color
     color: $fifth-wh-color
     text-align: center
-    position: relative
+    margin-top: 80px
 
 
 .black-footer p
