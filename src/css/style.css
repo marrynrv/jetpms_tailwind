@@ -158,7 +158,6 @@ h2 {
 }
 
 .black-footer {
-  height: 500px;
   background: #1E1E1E;
   color: #FFFFFF;
   text-align: center;
@@ -168,15 +167,5 @@ h2 {
 .black-footer p {
   margin-top: 50px;
   text-align: center;
-}
-
-.black-footer .btn {
-  margin-top: 80px;
-  position: absolute;
-  width: 200px;
-  margin-left: 40px;
-}
-
-.black-footer span {
-  margin-top: 200px;
+  padding-bottom: 25px;
 }
