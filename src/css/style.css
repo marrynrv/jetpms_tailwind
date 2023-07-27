@@ -49,7 +49,7 @@ h2 {
 }
 
 .second-block h2 {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .info {
@@ -111,6 +111,7 @@ h2 {
 .third-block h2 {
   text-align: center;
   margin-top: 100px;
+  padding-top: 50px;
 }
 
 .third-block {
@@ -141,17 +142,61 @@ h2 {
   padding-top: 10px;
 }
 
-.calculate {
+.fourth-block {
   background-color: #1E1E1E;
   color: #FFFFFF;
+  text-align: center;
+}
+
+.calculate {
+  border: 2px solid #D4D2CE;
+  display: inline-block;
+  margin: 50px;
+  border-radius: 30px;
+}
+
+.calculate-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+  gap: 150px;
+  text-align: start;
 }
 
 .calculate-text {
   margin-left: 50px;
 }
 
-.calculate option {
+.amount-of-beds-country {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.dropdown {
+  width: 190px;
+  height: 50px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
   color: #1E1E1E;
+  cursor: pointer;
+  outline: none;
+}
+
+.price {
+  width: 330px;
+  height: 360px;
+  text-align: center;
+  background-color: #2B2A2A;
+  border: 2px solid #D4D2CE;
+  border-radius: 30px;
 }
 
 .comm-section {
@@ -162,11 +207,10 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 60px;
   margin-top: 80px;
-  margin: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
