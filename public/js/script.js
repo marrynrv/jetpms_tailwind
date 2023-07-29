@@ -53,4 +53,6 @@ var returnSubscriptionPrice = function(bedscount_value)
 }
 
 
-updatePrice();
+window.onload = function () {
+   updatePrice();
+};
