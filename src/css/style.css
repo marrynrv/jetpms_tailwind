@@ -1,6 +1,5 @@
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -19,10 +18,7 @@ h2 {
 
 .col {
   margin-top: 150px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .col a {
@@ -33,15 +29,9 @@ h2 {
 }
 
 .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .row span {
@@ -53,25 +43,15 @@ h2 {
 }
 
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 3.5rem;
 }
 
 .info-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 295px;
   margin-top: 50px;
   padding: 20px;
@@ -120,16 +100,15 @@ h2 {
 }
 
 .wrapper {
-  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
   gap: 35px;
   margin-top: 100px;
 }
 
 .advantage_item {
   padding: 40px;
-  width: 460px;
+  width: 450px;
   border-radius: 50px;
   background-color: #FFFFFF;
   height: 300px;
@@ -156,13 +135,9 @@ h2 {
 }
 
 .calculate-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 30px;
   gap: 150px;
   text-align: start;
@@ -174,8 +149,6 @@ h2 {
 
 .amount-of-beds-country {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
@@ -200,19 +173,12 @@ h2 {
 }
 
 .comm-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   gap: 60px;
   margin-top: 80px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .comm-item {
@@ -251,3 +217,5 @@ h2 {
   text-align: center;
   padding-bottom: 25px;
 }
+
+/*# sourceMappingURL=style.css.map */
