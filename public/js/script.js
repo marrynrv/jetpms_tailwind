@@ -51,3 +51,6 @@ var returnSubscriptionPrice = function(bedscount_value)
    }
    return b_price;
 }
+
+
+updatePrice();
