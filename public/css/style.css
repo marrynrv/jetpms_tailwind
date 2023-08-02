@@ -62,7 +62,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #2b2640;
+    background: #1E1E1E;
     transition: 0.3s;
   }
   header .navbar.active {
