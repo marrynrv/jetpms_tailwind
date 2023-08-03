@@ -96,7 +96,7 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   gap: 3.5rem;
-  margin: 30px;
+  margin: 20px;
 }
 
 .info-item {
@@ -180,7 +180,7 @@ header {
 .calculate {
   border: 2px solid #D4D2CE;
   display: inline-block;
-  margin: 50px;
+  margin: 40px;
   border-radius: 30px;
 }
 
@@ -188,19 +188,25 @@ header {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 30px;
-  gap: 150px;
+  margin: 25px;
+  gap: 100px;
   text-align: start;
 }
 
 .calculate-text {
-  margin-left: 50px;
+  margin-left: 10px;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
 }
 
 .amount-of-beds-country {
-  margin-top: 50px;
   display: flex;
-  gap: 30px;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 35px;
 }
 
 .dropdown {
@@ -304,7 +310,7 @@ header {
 }
 @media (max-width: 720px) {
   header {
-    padding: 10px 16px;
+    padding: 10px 25px;
   }
   .col img {
     display: none;
@@ -317,6 +323,123 @@ header {
   }
   .btn-more {
     font-size: 15px;
+  }
+}
+@media (max-width: 625px) {
+  .advantage_item {
+    width: 380px;
+  }
+  .advantage_item h3 {
+    font-size: 20px;
+  }
+  .advantage_item h4 {
+    font-size: 16px;
+  }
+  .advantage_item p {
+    font-size: 13px;
+  }
+  .calculate-text h5 {
+    font-size: 13px;
+  }
+  .calculate-text p {
+    font-size: 13px;
+  }
+  .calculate-text span {
+    font-size: 20px;
+  }
+  .dropdown {
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+  }
+  .comm-item {
+    width: 450px;
+  }
+  .black-footer h2 {
+    font-size: 20px;
+  }
+  .black-footer p {
+    font-size: 13px;
+    padding: 0 60px;
+  }
+}
+@media (max-width: 495px) {
+  .col span {
+    font-size: 25px;
+  }
+  .second-block h2 {
+    font-size: 20px;
+  }
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    margin-top: 60px;
+  }
+  .advantage_item {
+    width: 280px;
+  }
+  .advantage_item h3 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .advantage_item h4 {
+    font-size: 13px;
+  }
+  .advantage_item p {
+    font-size: 11px;
+    padding-top: 7px;
+  }
+  .select {
+    display: flex;
+    flex-direction: column;
+  }
+  .price {
+    width: 250px;
+    height: 290px;
+  }
+  #big-price {
+    font-size: 50px;
+    padding: 40px 0;
+  }
+  .price p {
+    font-size: 9px;
+  }
+  .calculate {
+    margin: 40px 23px;
+  }
+  .calculate-text h3 {
+    font-size: 20px;
+  }
+  .calculate-text h5 {
+    font-size: 10px;
+  }
+  .calculate-text p {
+    font-size: 10px;
+  }
+  .calculate-text span {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .amount-of-beds-country {
+    flex-direction: column;
+  }
+  .select {
+    margin: 0 auto;
+  }
+  .dropdown {
+    font-size: 12px;
+    width: 75px;
+    height: 25px;
+    margin: 0 auto;
+  }
+  .comm-item {
+    width: 320px;
+  }
+  .black-footer h2 {
+    font-size: 19px;
+  }
+  .black-footer p {
+    font-size: 11px;
+    padding: 0 40px;
   }
 }
 
