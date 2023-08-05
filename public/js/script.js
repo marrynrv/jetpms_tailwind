@@ -8,11 +8,19 @@ var updatePrice = function() {
    console.log(typeof country_value); 
    console.log(typeof bedscount_value);
    
-   b_price = returnSubscriptionPrice(bedscount_value);
+   b_price = calculateSubscriptionPrice(bedscount_value);
    document.getElementById("big-price").innerText = b_price + "$";
 }
    
-var returnSubscriptionPrice = function(bedscount_value)
+var calculateSubscriptionPrice = function(bedscount_value)
+{
+   b_price = 0;
+   b_price = getBedFactor(bedscount_value); 
+   b_price = getCountryFactor(country_value, b_price);
+   return b_price;
+}
+
+var getBedFactor = function(bedscount_value)
 {
    b_price = 0;
    switch (bedscount_value)
@@ -34,6 +42,11 @@ var returnSubscriptionPrice = function(bedscount_value)
          bedscount = "more than 26";
          break;
    }
+   return b_price;
+}
+
+var getCountryFactor = function(country_value, b_price) {
+
    switch (country_value)
    {
       case "1":
@@ -47,14 +60,13 @@ var returnSubscriptionPrice = function(bedscount_value)
       case "3":
          country = "Another country";
          b_price *= 1.5;
-
    }
    return b_price;
 }
 
-
 window.onload = function () {
    updatePrice();
+
    let menu = document.querySelector("#menu-icon");
    let navbar = document.querySelector(".navbar");
 
@@ -67,4 +79,3 @@ window.onload = function () {
    };
 
 };
-
