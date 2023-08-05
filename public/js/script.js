@@ -23,25 +23,6 @@ var calculateSubscriptionPrice = function(bedscount_value)
 var getBedFactor = function(bedscount_value)
 {
    b_price = 0;
-  /*  switch (bedscount_value)
-   {
-      case "1":
-         b_price = 2;
-         bedscount = "from 1 to 10";
-         break;
-      case "2":
-         b_price = 5;
-         bedscount = "from 11 to 18";
-         break;
-      case "3":
-         b_price = 10;
-         bedscount = "from 19 to 26";
-         break;
-      case "4":
-         b_price = 12;
-         bedscount = "more than 26";
-         break;
-   } */
    if(bedscount_value > 0 && bedscount_value <= 10){
       b_price = 20;
    }else if(bedscount_value >= 11 && bedscount_value <= 18){
