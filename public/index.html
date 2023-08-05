@@ -6,27 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jet PMS | Speed up your business</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="/js/script.js"></script>
 </head>
 <body>
 
 <!--FIRST BLOCK-->
 <div class="black-header">
-    <div class="container px-7">
-        <div class="row-1">
-            <div class="flex justify-between pt-5">
-                <span class="font-medium text-5xl">JETPMS</span>
-                
-                <div class="space-x-7">
-                    <a href="#">Main</a>
-                    <a href="#">How it works</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Contact us</a>
-                    <a href="#">LOGIN</a>
-                </div>
-            </div>
-        </div>
+    <!-- <div class="container px-10"> -->
+        <!-- <div class="row-1"> -->
+            <header>
+                <span class="logo">JETPMS</span>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <ul  id=""  class="navbar">
+                    <li><a href="#">Main</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a id="login" class="ml-10" href="#">LOGIN</a></li>
+                </ul>
+            </header>
+        <!-- </div> -->
         <div class="row">
             <div class="col flex ">
                 <span class="text-3xl ">Hostel Automatization<br>Mission Control</span>
@@ -36,15 +38,15 @@
                 <img class="w-24 sm:w-32 md:w-48 lg:w-64" src="img/jet3.png" alt="">
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </div>
 <!--SECOND BLOCK-->
 <div class="second-block">
-    <h2 class="text-5xl">Seamlessly sell your rooms and beds</h2>
+    <h2 class="font-medium xl:text-5xl md:text-4xl sm:text-3xl">Seamlessly sell your rooms and beds</h2>
     <div class="mt-14">
         <div class="info">
             <div class="info-item">
-                <h3 class="font-medium text-2xl">Calendar</h3>
+                <h3 class="font-medium xl:text-2xl text-xl">Calendar</h3>
                 <p>visualize all rooms and beds arranged by dates</p>
                 <div class="list-in-info-item">
                     <ul>
@@ -57,7 +59,7 @@
                 <a href="#" class="btn-more ">MORE</a>
             </div>
             <div class="info-item">
-                <h3 class="font-medium text-2xl">Channel Manager</h3>
+                <h3 class="font-medium xl:text-2xl text-xl">Channel Manager</h3>
                 <p>online-integration with other service providers</p>
                 <div class="list-in-info-item">
                     <ul>
@@ -69,7 +71,7 @@
                 <a href="#" class="btn-more ">MORE</a>
             </div>
             <div class="info-item">
-                <h3 class="font-medium text-2xl">Booking Button</h3>
+                <h3 class="font-medium xl:text-2xl text-xl">Booking Button</h3>
                 <p>online booking on your web-site</p>
                 <div class="list-in-info-item">  
                     <ul>
@@ -80,10 +82,10 @@
                 </div>  
                 <a href="#" class="btn-more ">MORE</a>
             </div>
-        </div>
-        <div class="info">
+        <!-- </div> -->
+        <!-- <div class="info"> -->
             <div class="info-item">
-                <h3 class="font-medium text-2xl">Accounting</h3>
+                <h3 class="font-medium xl:text-2xl text-xl">Accounting</h3>
                 <p>resource management and useful stats</p>
                 <div class="list-in-info-item">
                     <ul>
@@ -96,7 +98,7 @@
                 <a href="#" class="btn-more">MORE</a>
             </div>
             <div class="info-item">
-                    <h3 class="font-medium text-2xl">Gmail integration</h3>
+                    <h3 class="font-medium xl:text-2xl text-xl">Gmail integration</h3>
                     <p>All necessary communication in one place</p>
                     <div class="list-in-info-item">
                         <ul>
@@ -108,7 +110,7 @@
                     <a href="#" class="btn-more">MORE</a>
             </div>
             <div class="info-item">
-                <h3 class="font-medium text-2xl">Todoist</h3>
+                <h3 class="font-medium xl:text-2xl text-xl">Todoist</h3>
                 <p>Reminders and nice to do things</p>
                 <div class="list-in-info-item">
                     <ul>
@@ -120,13 +122,13 @@
                 </div>
                 <a href="#" class="btn-more">MORE</a>
             </div>
-        </div>
         <!-- </div> -->
+        </div>
     </div>
 </div>
 <div class="third-block">
     <div class="">
-        <h2 class="text-5xl">Advantages of using JETPMS</h2>
+        <h2 class=" font-medium xl:text-5xl md:text-4xl sm:text-3xl">Advantages of using JETPMS</h2>
         <div class="wrapper">
             <!-- <div class="advantage-items-wrapper"> -->
                 <div class="advantage_item">
@@ -162,7 +164,7 @@
                 <p class="text-yellow-500 mt-3">Price depends on: <b>amount of beds and country</b></p>
                 <div class="amount-of-beds-country">
                     <div class="select">
-                        <span class="text-2xl">Amount of beds</span><br>
+                        <span class="text-2xl">Amount of beds</span>
                         <select name="amountofbeds" id="bedscount_select" onclick="updatePrice()" class="btn-primary mt-6 dropdown">
                             <option value="1">from 1 to 10</option>
                             <option value="2">from 11 to 18</option>
@@ -171,8 +173,8 @@
                         </select>
                     </div>
 
-                    <div class="">
-                        <span class="text-2xl">Country</span><br>
+                    <div class="select">
+                        <span class="text-2xl">Country</span>
                         <select name="country" id="country_select" onclick="updatePrice()" class="btn-primary mt-6 dropdown">
                             <option value="1">Ukraine</option>
                             <option value="2">Poland</option>
@@ -184,7 +186,7 @@
             <div class="price">
                 <h3 id="big-price" class="text-7xl py-14">$ 3</h3>
                 <div class="">
-                    <a href="#" class="btn bg-red-800 py-2 px-4 rounded-lg hover:bg-red-950">TRY FOR FREE</a>
+                    <a href="#" class="btn bg-red-800 py-2 px-3 rounded-lg hover:bg-red-950">TRY FOR FREE</a>
                 </div>
                 <p class="mt-7 text-xs">We guarantee a refund within 30 days of<br>the first payment if you do not like our<br>for any reason.</p>
             </div>
@@ -194,7 +196,7 @@
 <!--FIFTH BLOCK-->
  
 <div class="fifth-block">
-    <h2 class="text-5xl pt-16">Pleased customers</h2>
+    <h2 class=" xl:text-5xl text-4xl pt-16">Pleased customers</h2>
     <div class="comm-section">
         <div class="comm-item">
             <h3 class="text-2xl">Hotel "Safe seal”,<br>Alaska</h3>
@@ -215,8 +217,8 @@
 
 <!--SIX BLOCK-->
     <div class="black-footer ">
-        <h2 class="text-3xl pt-10">We support you 24/7/365</h2>
-        <p>Our experts provides great technical and information consultation everyday and night.<br>We are interested in solving all issues. Lucky you!</p>
+        <h2 class="xl:text-3xl pt-10">We support you 24/7/365</h2>
+        <p>Our experts provides great technical and information consultation everyday and night. We are interested in solving all issues. Lucky you!</p>
         <div class="mt-9"><a href="#" class="btn bg-red-800 py-2 px-4 rounded-lg hover:bg-red-950">TRY FOR FREE</a></div>
         <p>Copyright © 2023 all rights are right</p>
     </div>

@@ -6,16 +6,58 @@ $fifth-wh-color:#FFFFFF
 
 body
     box-sizing: border-box
+    overflow-x: hidden 
+
+.btn
+    transition: .4s
 
 h2
     text-align: center
+    
+header
+    top: 0
+    right: 0
+    width: 100%
+    z-index: 1000
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding:30px 170px
+ 
+.logo
+    font-weight: 600
+    font-size: 2rem
+
+.navbar
+    display: flex
+
+.navbar a
+    color:$fifth-wh-color
+    padding: 10px 20px
+    font-weight: 500
+    text-transform: uppercase
+    outline: none
+
+.navbar a:hover
+    color:#ff792a
+    transition: .4s
+
+#login
+    border: 1px solid $fifth-wh-color
+    border-radius: 10px
+
+#login:hover
+    background-color: $fifth-wh-color
+
+#menu-icon
+    font-size: 2rem
+    cursor: pointer
+    display: none
+
 .black-header
     background-color: $base-color
     color: $fifth-wh-color
     height: 625px
-
-.space-x-7
-    text-transform: uppercase
 
 .col
     margin-top: 150px
@@ -42,15 +84,17 @@ h2
     justify-content: center
     flex-wrap: wrap
     gap: 3.5rem
+    margin: 20px
+    
 .info-item
     display: flex
     flex-direction: column
-    width: 295px
+    max-width: 295px
     margin-top: 50px
     padding: 20px
     height: 440px
     background-color: $third-gr-color
-
+    
 .info-item h3
     text-align: center
     position: relative
@@ -107,25 +151,31 @@ h2
 .calculate
     border: 2px solid $third-gr-color
     display: inline-block
-    margin: 50px 
+    margin: 40px 
     border-radius: 30px
 
 .calculate-items
     display: flex
     justify-content: space-around
     flex-wrap: wrap
-    margin: 30px
-    gap: 150px
+    margin: 25px
+    gap: 100px
     text-align: start
 
 .calculate-text
-    margin-left: 50px
+    margin-left: 10px
+
+
+.select
+    display: flex
+    flex-direction: column
 
 .amount-of-beds-country
-    margin-top: 50px
     display: flex
-    gap: 30px
-
+    flex-direction: row
+    margin-top: 50px
+    gap: 35px
+    
 .dropdown
     width: 190px
     height: 50px
@@ -150,7 +200,6 @@ h2
     justify-content: space-around
     gap: 60px
     margin-top: 80px
-
     flex-wrap: wrap
 
 .comm-item
@@ -182,3 +231,167 @@ h2
     margin-top: 50px
     text-align: center
     padding-bottom: 25px
+
+    
+@media(max-width:1560px)
+    header
+        padding: 15px 40px
+    
+
+@media(max-width:900px)
+    #menu-icon
+        display: initial
+    
+    #login
+        border: none
+
+    header .navbar
+        position: absolute
+        top: -400px
+        left: 0
+        right: 0
+        display: flex
+        flex-direction: column
+        text-align: center
+        background:$base-color
+        transition: .3s
+    
+    header .navbar.active
+        top: 70px
+    
+    .navbar a
+        padding: 1.5rem
+        display: block
+
+    .list-in-info-item li
+        font-size: 15px 
+
+@media(max-width:720px)
+    
+    header
+        padding: 10px 25px
+
+    .col img
+        display: none
+
+    .row
+        justify-content: center
+    
+    .list-in-info-item li
+        font-size: 13px 
+
+    .btn-more
+        font-size: 15px
+
+@media(max-width:625px)
+
+    .advantage_item 
+        width: 380px
+    .advantage_item h3
+        font-size: 20px
+
+    .advantage_item h4
+        font-size: 16px
+    
+    .advantage_item p
+        font-size: 13px
+    
+    .calculate-text h5
+        font-size: 13px
+
+    .calculate-text p
+        font-size: 13px
+
+    .calculate-text span
+        font-size: 20px
+
+    .dropdown
+        font-size: 12px
+        width: 90px
+        height: 30px
+
+    .comm-item
+        width: 450px
+
+    .black-footer h2
+        font-size: 20px
+
+    .black-footer p
+        font-size: 13px
+        padding: 0 60px
+
+@media(max-width:495px)
+    .col span
+        font-size: 25px
+        
+    .second-block h2
+        font-size: 20px
+
+    .wrapper
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr))
+        margin-top: 60px
+    .advantage_item 
+        width: 280px
+
+    .advantage_item h3
+        font-size: 17px
+        font-weight: 500
+
+    .advantage_item h4
+        font-size: 13px
+    
+    .advantage_item p
+        font-size: 11px
+        padding-top: 7px
+    
+    .select
+        display: flex
+        flex-direction: column
+    .price
+        width: 250px
+        height: 290px
+
+    #big-price
+        font-size: 50px
+        padding: 40px 0
+
+    .price p
+        font-size: 9px
+
+    .calculate
+        margin: 40px 23px
+    .calculate-text h3
+        font-size: 20px
+
+    .calculate-text h5
+        font-size: 10px
+
+    .calculate-text p
+        font-size: 10px
+
+    .calculate-text span
+        font-size: 17px
+        font-weight: 500
+
+    .amount-of-beds-country
+        flex-direction: column
+        
+    .select
+        margin: 0 auto
+
+    .dropdown
+        font-size: 12px
+        width: 75px
+        height: 25px
+        margin: 0 auto
+    .comm-item
+        width: 320px
+
+    .black-footer h2
+        font-size: 19px
+
+    .black-footer p
+        font-size: 11px
+        padding: 0 40px
+
+@media(max-width:360 415px)
