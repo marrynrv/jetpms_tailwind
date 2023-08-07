@@ -161,7 +161,7 @@ header {
   width: 450px;
   border-radius: 50px;
   background-color: #FFFFFF;
-  height: 300px;
+  height: 310px;
   margin: 0 auto;
 }
 
@@ -376,6 +376,7 @@ header {
   }
   .advantage_item {
     width: 280px;
+    height: 330px;
   }
   .advantage_item h3 {
     font-size: 17px;
